@@ -11,7 +11,8 @@ res.sendFile(path.join(__dirname+"/form.html"))
 })
 
 app.post('/api/v1/post',(req,res)=>{
-res.send(`<h1 style="color:green;">Name is</h1> ${req.body.name} <br><br> <h1 style="color:blue;">Email is</h1> ${req.body.email} <br><br> <h1 style="color:red;">Password is</h1> ${req.body.password}`);
+console.log(`Name is ${req.body.name}, Email is</h1> ${req.body.email} and Password is ${req.body.password}`);
+res.send('<H1 style="color:green">SUBMITTED</H1>')
 })
 
 app.listen(1100,()=>{
